@@ -1,0 +1,12 @@
+#nav {
+  a {
+    color: inherit;
+    display: block;
+    padding: 2rem 4rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #dcdcdc;
+    }
+  }
+}
