@@ -1,12 +1,22 @@
-#nav {
+nav {
+
+  background-color: #dcdcdc;
+  height: 100%;
+
   a {
     color: inherit;
     display: block;
-    padding: 2rem 4rem;
+    padding: 3rem;
+    text-align: center;
     text-decoration: none;
-
-    &:hover {
-      background-color: #dcdcdc;
+    &.active {
+      background-color: var(--bs-brand);
+      color: var(--bs-light);
     }
   }
+
+  ul {
+    margin: 0;
+  }
+
 }

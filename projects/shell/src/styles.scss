@@ -1,1 +1,9 @@
+$colors: (
+  'brand': '#e20074'
+);
+
 @import "~bootstrap";
+
+html, body {
+  height: 100%;
+}

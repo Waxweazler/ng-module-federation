@@ -6,4 +6,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+
+  modules = [
+    { path: '', label: 'Home' },
+    { path: 'local', label: 'Lazy Local' },
+    { path: 'remote', label: 'Lazy Remote' }
+  ]
+
 }

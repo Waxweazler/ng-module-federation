@@ -1,19 +1,17 @@
 import {NgModule} from '@angular/core';
-import {HeaderComponent} from './components/header/header.component';
 import {NavComponent} from './components/nav/nav.component';
-import {OutletComponent} from './components/outlet/outlet.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {HomeModule} from './modules/home/home.module';
 import {loadRemoteModule} from '@angular-architects/module-federation';
 import {AppComponent} from './app.component';
+import {MainComponent} from './components/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavComponent,
-    OutletComponent
+    MainComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
