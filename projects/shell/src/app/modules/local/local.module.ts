@@ -1,6 +1,6 @@
-import {NgModule} from "@angular/core";
-import {RouterModule} from "@angular/router";
-import {LocalComponent} from "./local.component";
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {LocalComponent} from './local.component';
 
 @NgModule({
   declarations: [

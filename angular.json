@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe",
             "index": "projects/mfe/src/index.html",
@@ -22,10 +22,9 @@
             "assets": [
               "projects/mfe/src/favicon.ico"
             ],
-            "styles": [
-              "projects/mfe/src/styles.scss"
-            ],
-            "scripts": []
+            "styles": [],
+            "scripts": [],
+            "extraWebpackConfig": "projects/mfe/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -53,19 +52,22 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "extraWebpackConfig": "projects/mfe/webpack.config.js"
             }
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "mfe:build",
-            "port": 3000
+            "port": 3000,
+            "extraWebpackConfig": "projects/mfe/webpack.config.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mfe:build:production"
+              "browserTarget": "mfe:build:production",
+              "extraWebpackConfig": "projects/mfe/webpack.config.js"
             }
           }
         }
@@ -79,7 +81,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/shell",
             "index": "projects/shell/src/index.html",
@@ -93,7 +95,8 @@
             "styles": [
               "projects/shell/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/shell/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -121,19 +124,22 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "extraWebpackConfig": "projects/shell/webpack.config.js"
             }
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "shell:build",
-            "port": 5000
+            "port": 5000,
+            "extraWebpackConfig": "projects/shell/webpack.config.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shell:build:production"
+              "browserTarget": "shell:build:production",
+              "extraWebpackConfig": "projects/shell/webpack.config.js"
             }
           }
         }

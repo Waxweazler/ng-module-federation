@@ -1,12 +1,11 @@
 {
-  "name": "wp-mod-fed",
+  "name": "ng-module-federation",
   "version": "0.0.0",
   "scripts": {
     "start:shell": "ng serve shell",
     "start:mfe": "ng serve mfe",
-    "start:all": "concurrently \"npm run start:shell\" \"npm run start:mfe\"",
     "build:shell": "ng build shell --prod",
-    "build:mfe": "ng build mfe1 --prod",
+    "build:mfe": "ng build mfe --prod",
     "build:all": "npm run build:shell && npm run build:mfe"
   },
   "private": true,
@@ -14,25 +13,26 @@
     "webpack": "^5.0.0"
   },
   "dependencies": {
-    "@angular/common": "~11.1.0",
-    "@angular/compiler": "~11.1.0",
-    "@angular/core": "~11.1.0",
-    "@angular/platform-browser": "~11.1.0",
-    "@angular/platform-browser-dynamic": "~11.1.0",
-    "@angular/router": "~11.1.0",
+    "@angular-architects/module-federation": "^1.2.3",
+    "@angular/common": "11.0.0",
+    "@angular/compiler": "11.0.0",
+    "@angular/core": "11.0.0",
+    "@angular/platform-browser": "11.0.0",
+    "@angular/platform-browser-dynamic": "11.0.0",
+    "@angular/router": "11.0.0",
+    "bootstrap": "~5.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3",
-    "bootstrap": "~5.0.0"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1101.1",
-    "@angular/cli": "~11.1.1",
-    "@angular/compiler-cli": "~11.1.0",
+    "@angular-devkit/build-angular": "0.1100.0",
+    "@angular/cli": "11.0.0",
+    "@angular/compiler-cli": "11.0.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "ts-node": "~8.3.0",
-    "typescript": "~4.1.2",
-    "concurrently": "~6.0.2"
+    "typescript": "~4.0.2",
+    "ngx-build-plus": "^10.1.1"
   }
 }
