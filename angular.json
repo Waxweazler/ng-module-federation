@@ -61,7 +61,7 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "mfe:build",
-            "port": 3000,
+            "port": 5002,
             "extraWebpackConfig": "projects/mfe/webpack.config.js"
           },
           "configurations": {
@@ -133,7 +133,7 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "shell:build",
-            "port": 5000,
+            "port": 5001,
             "extraWebpackConfig": "projects/shell/webpack.config.js"
           },
           "configurations": {
